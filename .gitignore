@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Antigravity / IDE
+.system_generated/
+.DS_Store
+*.swp
+
+# Model checkpoints & large data (can be downloaded or generated)
+data/cifar-10-batches-py/
+data/*.tar.gz
+data/*.zip
+checkpoints/*.pth
+checkpoints/*.pt
+!checkpoints/README.md
+
+# Streamlit
+.streamlit/

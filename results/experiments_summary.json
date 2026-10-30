@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "num_samples": 10,
+    "device": "mps",
+    "duration_seconds": 102.47,
+    "timestamp": "2026-10-29 18:49:59"
+  },
+  "baseline_comparison": {
+    "gradcam": {
+      "composite_mean": 0.7154,
+      "composite_std": 0.1349,
+      "composite_sem": 0.0427,
+      "stability_mean": 0.9986,
+      "faithfulness_mean": 0.5801,
+      "avg_runtime_sec": 0.707
+    },
+    "integrated_gradients": {
+      "composite_mean": 0.6763,
+      "composite_std": 0.0798,
+      "composite_sem": 0.0252,
+      "stability_mean": 0.9931,
+      "faithfulness_mean": 0.5621,
+      "avg_runtime_sec": 1.183
+    }
+  },
+  "repair_cohort_breakdown": {
+    "total_samples_evaluated": 10,
+    "samples_requiring_repair": 7,
+    "samples_requiring_no_repair": 3,
+    "actual_repair_attempts": 7,
+    "selection_improved_attempts": 4,
+    "partial_improvement_attempts": 1,
+    "unsuccessful_repair_attempts": 2,
+    "independent_validated_attempts": 2,
+    "intervention_success_rate_pct": 57.1,
+    "intervention_success_rate_denominator": "actual_repair_attempts",
+    "independent_validation_rate_pct": 28.6,
+    "independent_validation_rate_denominator": "actual_repair_attempts",
+    "population_repair_rate_pct": 40.0,
+    "population_repair_rate_denominator": "total_samples_evaluated",
+    "mean_selection_improvement_delta": 0.0448,
+    "mean_validation_improvement_delta": 0.014,
+    "avg_repair_runtime_sec": 8.078
+  },
+  "stress_test_spectrum": {
+    "noise_levels": [
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.35
+    ],
+    "mean_cosine_similarities": [
+      1.0,
+      0.9999,
+      0.9985,
+      0.9936,
+      0.958
+    ],
+    "mean_rank_correlations": [
+      0.9998,
+      0.9991,
+      0.9923,
+      0.9739,
+      0.8559
+    ],
+    "samples_averaged": 10
+  }
+}
